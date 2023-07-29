@@ -1,4 +1,3 @@
-// Replace with your Custom Search API key and ScrapingBee API key
 const CUSTOM_SEARCH_API_KEY = 'AIzaSyA_fyWb8eLFSl9iLcisy8UqABZpIWDKKi4';
 const SCRAPINGBEE_API_KEY = 'L8HUBO0FJBUONV0FZTZTRU8GSHU0HAG8YRU6HY792J6WL3ELZJCTQNT5F0MKG9OJLROIJKPM9BAVTBR6';
 
@@ -9,7 +8,6 @@ function search() {
         return;
     }
 
-    // Using Custom Search API to get top 5 URLs from Google search
     const customSearchURL = `https://www.googleapis.com/customsearch/v1?key=${CUSTOM_SEARCH_API_KEY}&cx=57d9cb9ea128b4a4e&q=${encodeURIComponent(searchQuery)}`;
 
     fetch(customSearchURL)
